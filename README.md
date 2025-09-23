@@ -13,5 +13,10 @@ All the classes can be found in `com.ncr.test.pyramid` package and its subpackag
 - For Task 2: class to fix  `com.ncr.test.pyramid.solver.impl.NaivePyramidSolver`
 - For Task 3: class for your solution `com.ncr.pyramid.solver.impl.YourSolver`
 
+## Benchmarking with JMH
+- Benchmarks are located in `src/jmh/java`
+- Use `./gradlew jmh` to run performance tests
+- You can adjust benchmark parameters via the Gradle `jmh` task in `build.gradle`
+
 ### *Additional Material*
 *The original test description is provided in* [`Software_Engineer_Qualification_Test.pdf`](docs/Software_Engineer_Qualification_Test.pdf)

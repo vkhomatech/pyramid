@@ -3,6 +3,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'me.champeau.jmh' version '0.7.3'
 }
 
 java {
@@ -21,4 +22,11 @@ dependencies {
 
 application {
     mainClass = 'com.ncr.test.pyramid.OurProgram'
+}
+
+jmh {
+    fork = 1
+    warmupIterations = 2
+    iterations = 5
+    includes = ["com.ncr.test.pyramid.PyramidSolverBenchmark"]
 }
